@@ -1,2 +1,0 @@
-# OpticsPrograms
-# OpticsProgram

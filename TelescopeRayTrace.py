@@ -30,8 +30,8 @@ def main():
                     must be greater than the eyepiece focal length, and both
                     values must be positive. Incident angle should be no greater
                     than 2 degrees from the optical axis.
-                    TEST VALUES --> Incident Angle: 0.5, Objective Lens: 70
-                                                         Eyepiece Lens: 10
+                    SAMPLE VALUES --> Incident Angle: 0.5, Objective Lens: 70
+                                                           Eyepiece Lens: 10
                     ************************************************************
                     """)
         elif ans == "2":
@@ -42,8 +42,8 @@ def main():
                     the absolute value of objective focal length must be greater
                     than eyepiece focal length. Incident angle should be no
                     greater than 2 degrees from the optical axis.
-                    TEST VALUES --> Incident Angle: 0.5, Objective Lens: 70
-                                                         Eyepiece Lens: -10
+                    SAMPLE VALUES --> Incident Angle: 0.5, Objective Lens: 70
+                                                           Eyepiece Lens: -10
                     *************************************************************
                     """)
         elif ans == "3":
@@ -52,12 +52,12 @@ def main():
             print("Unknown option selected")
     # User input
     d = 10.0
-    alpha1 = float(input("Enter Incident Angle: "))
+    alpha1 = float(input("Enter Incident Angle (degrees): "))
     if alpha1 >= 2.1:
         alpha1 = float(input("Try an incident angle less than 2 degrees: "))
     alpha1 *= (pi/180)
-    f_o = float(input("Enter Objective Focal Length: "))
-    f_e = float(input("Enter Eyepiece Focal Length: "))
+    f_o = float(input("Enter Objective Focal Length (cm): "))
+    f_e = float(input("Enter Eyepiece Focal Length (cm): "))
 
     # Safe gaurd to assure user produces appropriate input for focal lengths
     if f_e > f_o:
